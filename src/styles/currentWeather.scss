@@ -1,0 +1,28 @@
+@import '~susy/sass/susy';
+
+$susy: (
+  'columns': susy-repeat(12)
+);
+.weatherDisplay {
+  margin: 0 auto;
+  margin-top: 2em;
+  max-width: span(12);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &-items {
+    flex: 0 0 100%;
+    text-align: center;
+    img {
+      max-height: 400px;
+      max-width: 300px;
+    }
+    p {
+      color: white;
+      font-size: 2em;
+      span {
+        font-size: .5em;
+      }
+    }
+  }
+}
