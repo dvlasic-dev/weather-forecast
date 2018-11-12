@@ -8,7 +8,6 @@ import {
   rainCloud,
   sleet,
   snowCloud,
-  wind,
   ice
 } from '../assets/';
 

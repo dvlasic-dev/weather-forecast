@@ -1,5 +1,6 @@
 @import '~susy/sass/susy';
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 
 $susy: (
   'columns': susy-repeat(12)
@@ -14,7 +15,7 @@ $fill-color: #676363;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
 
   &-items {
     flex: 0 0 100%;
@@ -22,7 +23,7 @@ $fill-color: #676363;
   }
   p {
     color: $font-color;
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
   form {
     margin-top: 1em;
@@ -30,13 +31,13 @@ $fill-color: #676363;
     input {
       width: 260px;
       height: 45px;
-      font-size: 1.6em;
+      font-size: 1.4em;
       color: $font-color;
       padding-left: 0.5em;
       border: 0;
       border-radius: 25px;
       border: 1px $font-color solid;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Roboto', sans-serif;
 
       &:focus {
         outline: none;
@@ -56,8 +57,8 @@ $fill-color: #676363;
       background-color: $fill-color;
       padding-top: 0.1em;
       color: white;
-      font-size: 1.3em;
-      font-family: 'Poppins', sans-serif;
+      font-size: 1.1em;
+      font-family: 'Roboto', sans-serif;
     }
   }
 }

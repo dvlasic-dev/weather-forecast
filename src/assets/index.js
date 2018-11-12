@@ -9,3 +9,4 @@ export { default as sleet } from './sleet.svg';
 export { default as snowCloud } from './snowcloud.svg';
 export { default as wind } from './wind.svg';
 export { default as ice } from './ice.svg';
+export { default as map } from './map.svg';

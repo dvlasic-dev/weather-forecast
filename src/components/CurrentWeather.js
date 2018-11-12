@@ -1,6 +1,7 @@
 import React from 'react';
 import { WEATHER_STATES_DAY, WEATHER_STATES_NIGHT } from '../constants';
 import '../styles/currentWeather.scss';
+import { map } from '../assets';
 
 class CurrentWeather extends React.Component {
   constructor(props) {
@@ -34,7 +35,7 @@ class CurrentWeather extends React.Component {
             alt="Icon showing weather condition"
             src={isDay ? WEATHER_STATES_DAY[code] : WEATHER_STATES_NIGHT[code]}
           />
-          <p style={{paddingTop: '1em'}}>
+          <p style={{ paddingTop: '1em' }}>
             <span>feels like </span>
             <span onClick={() => this.changeUnits(this.state.flag)}>
               {this.state.flag === 'C'
@@ -43,7 +44,12 @@ class CurrentWeather extends React.Component {
             </span>
           </p>
           <p>{condition}</p>
-          <p>{location}</p>
+          <div className="weatherDisplay-items-locationImg">
+            <p>
+              <img src={map} alt="map pin" />
+              {location}
+            </p>
+          </div>
         </div>
       </section>
     );

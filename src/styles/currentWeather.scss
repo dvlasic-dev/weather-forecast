@@ -1,32 +1,48 @@
 @import '~susy/sass/susy';
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 $susy: (
   'columns': susy-repeat(12)
 );
 .weatherDisplay {
   margin: 0 auto;
-  margin-top: 2em;
+  margin-top: 3em;
   max-width: span(12);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
   &-items {
     flex: 0 0 100%;
     text-align: center;
+
     img {
-      max-height: 400px;
-      max-width: 300px;
+      max-height: 300px;
+      max-width: 200px;
     }
+
     p {
       color: white;
-      font-family: 'Poppins', sans-serif;
-      font-size: 2em;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.7em;
       span:nth-child(1) {
         font-size: 0.5em;
       }
       span:nth-child(2) {
         cursor: pointer;
+      }
+    }
+
+    p:nth-child(3) {
+      font-size: 2em;
+    }
+    &-locationImg {
+      margin-top: 0.5em;
+      align-items: center;
+      img {
+        max-width: 25px;
+        max-height: 25px;
+        margin-right: 0.2em;
       }
     }
   }

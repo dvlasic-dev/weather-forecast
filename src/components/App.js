@@ -74,7 +74,7 @@ class App extends Component {
             isDay={data.current.is_day}
           />
         ) : null}
-        <Forecast />
+        {data ? <Forecast forecast={data.forecast.forecastday} />  : null}
       </div>
     );
   }
