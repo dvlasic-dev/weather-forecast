@@ -67,6 +67,7 @@ class App extends Component {
         {data ? (
           <CurrentWeather
             currentTemperatureC={data.current.feelslike_c}
+            currentTemperatureF={data.current.feelslike_f}
             location={data.location.name}
             condition={data.current.condition.text}
             code={data.current.condition.code}
