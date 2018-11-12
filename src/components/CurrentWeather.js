@@ -26,6 +26,7 @@ class CurrentWeather extends React.Component {
       condition,
       isDay
     } = this.props;
+
     return (
       <section className="weatherDisplay">
         <div className="weatherDisplay-items">
@@ -33,7 +34,7 @@ class CurrentWeather extends React.Component {
             alt="Icon showing weather condition"
             src={isDay ? WEATHER_STATES_DAY[code] : WEATHER_STATES_NIGHT[code]}
           />
-          <p>
+          <p style={{paddingTop: '1em'}}>
             <span>feels like </span>
             <span onClick={() => this.changeUnits(this.state.flag)}>
               {this.state.flag === 'C'

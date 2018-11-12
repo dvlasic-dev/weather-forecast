@@ -1,4 +1,5 @@
 @import '~susy/sass/susy';
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 $susy: (
   'columns': susy-repeat(12)
@@ -13,6 +14,7 @@ $fill-color: #676363;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
+  font-family: 'Poppins', sans-serif;
 
   &-items {
     flex: 0 0 100%;
@@ -34,11 +36,13 @@ $fill-color: #676363;
       border: 0;
       border-radius: 25px;
       border: 1px $font-color solid;
+      font-family: 'Poppins', sans-serif;
+
       &:focus {
         outline: none;
       }
       &::placeholder {
-        opacity: .4;
+        opacity: 0.4;
       }
     }
     button {
@@ -53,6 +57,7 @@ $fill-color: #676363;
       padding-top: 0.1em;
       color: white;
       font-size: 1.3em;
+      font-family: 'Poppins', sans-serif;
     }
   }
 }

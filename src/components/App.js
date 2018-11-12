@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/App.scss';
-import { Search, CurrentWeather } from './index';
+import { Search, CurrentWeather, Forecast } from './index';
 import axios from 'axios';
 import { GEO_OPTIONS, BASE_URL, API_KEY } from '../constants/';
 import { setTimeout } from 'core-js';
@@ -74,6 +74,7 @@ class App extends Component {
             isDay={data.current.is_day}
           />
         ) : null}
+        <Forecast />
       </div>
     );
   }
