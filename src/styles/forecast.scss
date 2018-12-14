@@ -6,7 +6,7 @@ $susy: (
 );
 
 .dailyForecast {
-  max-width: span(12);
+  max-width: span(13);
   display: flex;
   margin: 0 auto;
   margin-top: 4em;
@@ -14,12 +14,47 @@ $susy: (
   text-align: center;
   align-content: center;
   justify-content: space-between;
-	padding-bottom: 5em;
-	font-family: 'Roboto', sans-serif;
-
+  padding-bottom: 3em;
+  font-family: 'Roboto', sans-serif;
+  color: #2c3e50;
+  @media only screen and(max-width: 425px){
+    max-width: span(14);
+  }
   &-item {
-		width: span(2);
-		background-color: white;
-		border-radius: 1.6em;
+    display: flex;
+    flex-direction: column;
+    width: span(2);
+    background-color: white;
+    border-radius: 1.6em;
+    font-size: 1em;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width:1000px) {
+      border-radius: 0.3125rem;
+      font-size: 0.4em;
+    @media only screen and(min-width:375px){
+      font-size: .55em;
+    }
+
+    }
+    img {
+      margin: 0 auto;
+    }
+    img:nth-child(2) {
+      margin-top: 0.5em;
+    }
+    p:nth-child(3) {
+      margin-top: 0.5em;
+    }
+    p:nth-child(4) {
+      margin-top: 1em;
+    }
+    p:nth-child(5) {
+      margin-top: 0.5em;
+    }
+    p:nth-child(6) {
+      margin-top: 0.5em;
+      padding-bottom: 1em;
+    }
   }
 }

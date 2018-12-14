@@ -38,6 +38,7 @@ class App extends Component {
   }
   success(pos) {
     const crd = pos.coords;
+
     this.setState({ latitude: crd.latitude, longitude: crd.longitude });
     axios(
       `${BASE_URL}${API_KEY}&q=${this.state.latitude},${
