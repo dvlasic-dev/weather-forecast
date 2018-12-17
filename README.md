@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-To run locally, download or clone repo, then inside root folder run npm install or yarn.
+To run locally, download or clone repo, inside root folder run npm install or yarn.
 
 ## Available Scripts
 
