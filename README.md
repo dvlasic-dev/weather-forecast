@@ -1,6 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 To run locally, download or clone repo, inside root folder run npm install or yarn.
+This project is using Apixu weather API, get your API Key on [website](https://www.apixu.com/) then replace it inside constants folder inside index.js file (find API_KEY const).
 
 ## Available Scripts
 
