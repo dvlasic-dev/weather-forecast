@@ -17,7 +17,7 @@ export const GEO_OPTIONS = {
   maximumAge: 0
 };
 export const BASE_URL = 'https://api.apixu.com/v1/forecast.json?key=';
-export const API_KEY = 'c236d4078d914177a76204248181011';
+export const API_KEY = 'INSERT_YOUR_KEY_HERE';
 
 export const WEATHER_STATES_DAY = {
   1000: sun,
